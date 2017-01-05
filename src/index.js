@@ -8,18 +8,18 @@ var server = restify.createServer({
 server.use(restify.CORS({
 
   // Defaults to ['*'].
-  origins: ['https://localhost:80'], 
+  origins: ['*']
   // Defaults to false.
   // credentials: true,
   // Sets expose-headers.
-  headers: [    'accept',
-        'accept-version',
-        'content-type',
-        'request-id',
-        'origin',
-        'x-api-version',
-        'x-request-id'
-        ] 
+  // headers: [    'accept',
+  //         'accept-version',
+  //         'content-type',
+  //         'request-id',
+  //         'origin',
+  //         'x-api-version',
+  //         'x-request-id'
+  //         ] 
 
 }));
 
