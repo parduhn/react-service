@@ -11,6 +11,8 @@ docker rmi rest-service -f
 echo Build image:
 docker build -t rest-service .
 echo Run container:
-docker run -p 80:80 -d --name rest-service rest-service
+docker run -p 5001:5001 -d --name rest-service rest-service
+echo Running containers:
+docker ps
 
 
